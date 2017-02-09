@@ -1,5 +1,5 @@
 <template>
-	<p v-text='msg'></p>
+	<p class='hello' v-text='msg'></p>
 
 </template>
 
@@ -16,10 +16,16 @@
 	}
 
 </script>
-<style scoped>
+<style scoped lang='less'>
 	p{
 		font-size: 18px;
-		color: red;
+		/*color: red;*/
 	}
+	@hello: green;
+@world: #66bb33;
+
+  .hello {
+color: @hello;
+  }
 
 </style>
